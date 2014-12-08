@@ -1,0 +1,15 @@
+c:\users\bilalo89\documents\visual studio 2010\Projects\SmartMarket\SmartMarket\bin\SmartMarket.dll
+c:\users\bilalo89\documents\visual studio 2010\Projects\SmartMarket\SmartMarket\bin\SmartMarket.pdb
+c:\users\bilalo89\documents\visual studio 2010\Projects\SmartMarket\SmartMarket\obj\Debug\ResolveAssemblyReference.cache
+c:\users\bilalo89\documents\visual studio 2010\Projects\SmartMarket\SmartMarket\obj\Debug\SmartMarket.dll
+c:\users\bilalo89\documents\visual studio 2010\Projects\SmartMarket\SmartMarket\obj\Debug\SmartMarket.pdb
+D:\Culture\University\4th\Project\WebService\SmartMarket\SmartMarket\bin\SmartMarket.dll
+D:\Culture\University\4th\Project\WebService\SmartMarket\SmartMarket\bin\SmartMarket.pdb
+D:\Culture\University\4th\Project\WebService\SmartMarket\SmartMarket\obj\Debug\ResolveAssemblyReference.cache
+D:\Culture\University\4th\Project\WebService\SmartMarket\SmartMarket\obj\Debug\SmartMarket.dll
+D:\Culture\University\4th\Project\WebService\SmartMarket\SmartMarket\obj\Debug\SmartMarket.pdb
+D:\Culture\University\4th\Fourth Year Project\WebService\SmartMarket\SmartMarket\bin\SmartMarket.dll
+D:\Culture\University\4th\Fourth Year Project\WebService\SmartMarket\SmartMarket\bin\SmartMarket.pdb
+D:\Culture\University\4th\Fourth Year Project\WebService\SmartMarket\SmartMarket\obj\Debug\ResolveAssemblyReference.cache
+D:\Culture\University\4th\Fourth Year Project\WebService\SmartMarket\SmartMarket\obj\Debug\SmartMarket.dll
+D:\Culture\University\4th\Fourth Year Project\WebService\SmartMarket\SmartMarket\obj\Debug\SmartMarket.pdb

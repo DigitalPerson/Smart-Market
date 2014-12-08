@@ -1,0 +1,4 @@
+https://class.coursera.org/ml/lecture/preview
+http://holehouse.org/mlclass/16_Recommender_Systems.html
+http://holehouse.org/mlclass/04_Linear_Regression_with_multiple_variables.html
+http://holehouse.org/mlclass/17_Large_Scale_Machine_Learning.html

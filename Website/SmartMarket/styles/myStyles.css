@@ -1,0 +1,143 @@
+﻿.fields
+{
+    width:200px;
+}
+.searchBox
+{
+    display: block;
+    float: left;
+    width: 168px;
+    height: 25px;
+    margin: 0;
+    padding: 0 0 0 10px;
+    background: url("/images/search_l.gif") 0 0 no-repeat #1F1F1F;
+    border: none;
+    color: White;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+.searchBoxButton
+{
+    margin-top: 15px;
+}
+.topNavButton
+{
+    display:block;
+	margin:0 15px 0 0;
+	padding:14px 15px;
+	color:#FFFF00;
+	background-color:#1A2022;
+}
+.topNavButton:hover
+{
+    color:#FFFFFF;
+	background-color:#586D74;
+}
+.iconImageField
+{
+    width: 48px;
+    height: 48px;
+}
+.categoriesDatalist
+{
+    border-collapse:collapse;
+	border-right:1px solid #D4D4D4;
+	border-left:1px solid #D4D4D4;
+    width:100%;
+}
+.button
+{
+	margin:0;
+	padding:5px;
+	color:#FFFF00;
+	background-color:#242D2F;
+	border:1px solid #666666;
+}
+.block
+{
+    display:block;
+}
+
+/* ****************** App detalis ****************** */
+.appContent 
+{ 
+  overflow:auto; 
+  width: 600px; 
+  background: gray; 
+} 
+
+.appLeft, .appRight 
+{ 
+  width: 40%; 
+  height:180px;
+  margin:5px; 
+  padding: 1em; 
+} 
+
+.appLeft  { float:left;  }
+.appRight { float:right; } 
+
+/* ****************** RatingStar small ****************** */
+.ratingStarSmall
+{
+	white-space:nowrap;
+	margin:0em;
+	height:14px;
+}
+.ratingStarSmall .ratingItemSmall
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background-repeat: no-repeat;
+	cursor:pointer;
+}
+.ratingStarSmall .Empty 
+{
+    background-image: url("../images/Rating/Small/ratingStarEmpty.png");
+}
+.ratingStarSmall .Filled 
+{
+    background-image: url("../images/Rating/Small/ratingStarFilled.png");
+}
+.ratingStarSmall .Saved 
+{
+    background-image: url("../images/Rating/Small/ratingStarSaved.png");
+    
+}
+/* ****************** RatingStar large ****************** */
+.ratingStarLarge
+{
+	white-space:nowrap;
+	margin:1em;
+	height:46px;
+}
+.ratingStarLarge .ratingItemLarge 
+{
+    font-size: 0pt;
+    width: 46px;
+    height: 46px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    background-repeat: no-repeat;
+	cursor:pointer;
+}
+.ratingStarLarge .Empty 
+{
+    background-image: url("../images/Rating/Large/ratingStarEmpty.png");
+}
+.ratingStarLarge .Filled 
+{
+    background-image: url("../images/Rating/Large/ratingStarFilled.png");
+}
+.ratingStarLarge .Saved 
+{
+    background-image: url("../images/Rating/Large/ratingStarSaved.png");
+}
+

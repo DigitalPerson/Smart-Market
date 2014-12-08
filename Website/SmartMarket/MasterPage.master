@@ -1,0 +1,163 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="styles/2col.css" type="text/css" />
+    <link rel="stylesheet" href="styles/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="styles/myStyles.css" type="text/css" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head_ContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-33072901-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+    <div class="wrapper col1">
+        <div id="head">
+            <div>
+                <div>
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Logo.png" CssClass="searchBoxButton"
+                        Width="75px" />
+                    <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx">Smart Market</asp:HyperLink>
+                </div>
+                <div>
+                    <asp:TextBox ID="search_TextBox" runat="server" CssClass="searchBox"></asp:TextBox>
+                    <asp:ImageButton ID="search_ImageButon" runat="server" ImageUrl="~/Images/search.gif"
+                        CssClass="searchBoxButton" OnClick="search_ImageButon_Click" />
+                </div>
+            </div>
+            <div id="topnav">
+                <ul>
+                    <li><a href="Default.aspx">Home</a></li>
+                    <asp:LoginView runat="server">
+                        <LoggedInTemplate>
+                        </LoggedInTemplate>
+                        <AnonymousTemplate>
+                            <li><a href="Register.aspx">Register</a></li>
+                        </AnonymousTemplate>
+                    </asp:LoginView>
+                    <li><a href="AppDetails.aspx?package=com.digitalsoft.smartmarket">Download</a></li>
+                    <li><a href="#">Apps</a>
+                        <ul>
+                            <asp:LoginView runat="server">
+                                <LoggedInTemplate>
+                                    <li><a href="Search.aspx?suggested=true">Suggested</a></li>
+                                </LoggedInTemplate>
+                            </asp:LoginView>
+                            <li><a href="Search.aspx">Featured</a></li>
+                            <li><a href="Search.aspx?newest=true">Newest</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <asp:Label ID="profile_Label" runat="server" Text="Profile" CssClass="topNavButton"></asp:Label>
+                        <ul>
+                            <li><a href="EditUser.aspx">Edit</a></li>
+                            <li>
+                                <asp:HyperLink ID="admin_HyperLink" runat="server" NavigateUrl="~/AdminControlPanel.aspx"
+                                    Visible="false">Admin</asp:HyperLink></li>
+                            <li>
+                                <asp:HyperLink ID="manageApps_HyperLink" runat="server" NavigateUrl="~/DeveloperControlPanel.aspx"
+                                    Visible="false">Manage Apps</asp:HyperLink></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li>
+                        <asp:LoginStatus runat="server" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--  / Head -->
+    <div class="wrapper col2">
+        <div class="container">
+            <!-- ############################################################################################## -->
+            <!-- ############################################################################################## -->
+            <!-- ############################################################################################## -->
+            <asp:ContentPlaceHolder ID="body_ContentPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- ############################################################################################## -->
+            <div id="column">
+                <div class="sponsors">
+                    <h2 class="title" style="font-size: 24pt; color: #006699;">
+                        Categories</h2>
+                    </br>
+                    <div>
+                        <asp:Label ID="application_Label" runat="server" Text="Application" CssClass="bold"
+                            Font-Size="Large"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:DataList ID="apps_DataList" runat="server" DataSourceID="apps_LinqDataSource"
+                            ShowFooter="False" CssClass="categoriesDatalist">
+                            <ItemTemplate>
+                                &nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "Search.aspx?category="+ Eval("categoryID") %>'
+                                    Text='<%# Eval("name") %>'></asp:HyperLink>
+                                <br />
+                            </ItemTemplate>
+                        </asp:DataList>
+                        <asp:LinqDataSource ID="apps_LinqDataSource" runat="server" ContextTypeName="SmartMarketDataClassesDataContext"
+                            EntityTypeName="" Select="new (name, categoryID)" TableName="Categories" Where="appTypeID == @appTypeID">
+                            <WhereParameters>
+                                <asp:Parameter DefaultValue="1" Name="appTypeID" Type="Int32" />
+                            </WhereParameters>
+                        </asp:LinqDataSource>
+                    </div>
+                    <div>
+                        <br />
+                        <br />
+                        <asp:Label ID="game_Label" runat="server" Text="Game" CssClass="bold" Font-Size="Large"></asp:Label>
+                        <br />
+                        <br />
+                        <asp:DataList ID="games_DataList" runat="server" DataSourceID="games_LinqDataSource"
+                            ShowFooter="False" CssClass="categoriesDatalist">
+                            <ItemTemplate>
+                                &nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# "Search.aspx?category="+ Eval("categoryID") %>'
+                                    Text='<%# Eval("name") %>'></asp:HyperLink>
+                                <br />
+                            </ItemTemplate>
+                        </asp:DataList>
+                        <asp:LinqDataSource ID="games_LinqDataSource" runat="server" ContextTypeName="SmartMarketDataClassesDataContext"
+                            EntityTypeName="" Select="new (name, categoryID)" TableName="Categories" Where="appTypeID == @appTypeID">
+                            <WhereParameters>
+                                <asp:Parameter DefaultValue="2" Name="appTypeID" Type="Int32" />
+                            </WhereParameters>
+                        </asp:LinqDataSource>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <!-- ############################################################################################## -->
+            <!-- ############################################################################################## -->
+            <!-- ############################################################################################## -->
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    <div class="wrapper col3">
+        <div id="copyright">
+            <ul>
+                Copyright &copy; 2012 - All Rights Reserved - <a href="Default.aspx">DigitalSoft</a></ul>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

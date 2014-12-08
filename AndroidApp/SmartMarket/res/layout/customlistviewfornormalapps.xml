@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/icon_imageView"
+        android:contentDescription="@string/icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:paddingLeft="2dp" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/appName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/icon_imageView"
+        android:paddingLeft="10dp"
+        android:text="@string/appName"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/developerName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appName_textView"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@+id/icon_imageView"
+        android:paddingLeft="10dp"
+        android:text="@string/developerName" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/installsArrowimageView"
+        android:contentDescription="@string/installs"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/developerName_textView"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/installsarrow" />
+
+    <TextView
+        android:id="@+id/installs_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/installsArrowimageView"
+        android:layout_toLeftOf="@+id/installsArrowimageView"
+        android:paddingRight="2dp"
+        android:text="@string/installs" />
+
+</RelativeLayout>

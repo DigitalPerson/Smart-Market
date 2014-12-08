@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17, 14.625" name="SmartMarketDataClasses">
+  <DataContextMoniker Name="/SmartMarketDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" absoluteBounds="9, 6.25, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/App" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7a791e27-1d44-4cba-a45e-048729451f77" absoluteBounds="9.015, 6.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c217c62d-1c7e-4db2-bb3b-a64552eef4c6" absoluteBounds="3.5, 10.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/AppType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31503a6a-2f56-45e9-a712-7978014fa364" absoluteBounds="3.515, 10.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05c96f1c-9893-4101-a063-57817eba4827" absoluteBounds="6.25, 10.125, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdbd02b4-22df-4793-849a-b2d5f68409c4" absoluteBounds="6.265, 10.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e941d9a5-6dac-44db-91d9-4e8a74b85f76" absoluteBounds="0.75, 5.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6356448b-ce61-4d9e-bf91-51d7dd99e041" absoluteBounds="0.765, 6.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8d58a42-3425-4532-be12-dc61cd50e951" absoluteBounds="6.25, 6.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Developer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dac977e8-f931-45e3-8ad6-eca907f31cf5" absoluteBounds="6.265, 7.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1821e7f-1c84-4418-b67c-7ac9b3d2fd03" absoluteBounds="11.75, 5.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Recommendation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4864bcb8-46f8-4f17-bb19-f548430a68fe" absoluteBounds="11.765, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3b2e9841-922b-43d1-8f10-4276a16ffaab" absoluteBounds="11.75, 7.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Screenshot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="82ccaaf0-311a-45c9-99f4-14a0ae2d80c4" absoluteBounds="11.765, 8.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" absoluteBounds="3.5, 5.5, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55281f79-e14c-4547-805e-3e76aa95c080" absoluteBounds="3.515, 5.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6ae064ff-8d4b-4c0e-9905-b28908978861" absoluteBounds="14.75, 6.625, 2, 1.5785953776041675">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/UserApp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f17fa439-0c46-41fa-8e75-0fc6b5d013ae" absoluteBounds="14.765, 7.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d7308ec4-e19d-43a8-8e78-f75542dc80cb" absoluteBounds="6.25, 4.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/UserFeature" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e79dd098-9e29-4889-85e2-28c344ec8c5f" absoluteBounds="6.265, 5.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="82e35d3e-78a8-4623-84e8-f5c1cfc42d7a" absoluteBounds="11.75, 12.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/SmartMarketDataClassesDataContext/Version" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d592fa0d-0125-4ab6-bc4e-468c9ba419cc" absoluteBounds="11.765, 12.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 10.8181469726562); (9.38541416666667 : 10.8181469726562 : JumpStart); (9.55208083333333 : 10.8181469726562 : JumpEnd); (10 : 10.8181469726562); (10 : 9.3670068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/Category/Category_App" />
+      <nodes>
+        <classShapeMoniker Id="05c96f1c-9893-4101-a063-57817eba4827" />
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.7219962565104); (6.25 : 10.7219962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/AppType/AppType_Category" />
+      <nodes>
+        <classShapeMoniker Id="c217c62d-1c7e-4db2-bb3b-a64552eef4c6" />
+        <classShapeMoniker Id="05c96f1c-9893-4101-a063-57817eba4827" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.76044840494792); (9 : 7.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/Developer/Developer_App" />
+      <nodes>
+        <classShapeMoniker Id="d8d58a42-3425-4532-be12-dc61cd50e951" />
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 6.69314697265625); (11.75 : 6.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/App/App_Recommendation" />
+      <nodes>
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+        <classShapeMoniker Id="c1821e7f-1c84-4418-b67c-7ac9b3d2fd03" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 8.56814697265625); (11.75 : 8.56814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/App/App_Screenshot" />
+      <nodes>
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+        <classShapeMoniker Id="3b2e9841-922b-43d1-8f10-4276a16ffaab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.36140055338542); (6.25 : 7.36140055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/User/User_Developer" />
+      <nodes>
+        <classShapeMoniker Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" />
+        <classShapeMoniker Id="d8d58a42-3425-4532-be12-dc61cd50e951" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.50564697265625); (8.41666666666667 : 6.50564697265625 : JumpStart); (8.58333333333333 : 6.50564697265625 : JumpEnd); (8.75 : 6.50564697265625); (8.75 : 5.5); (12.75 : 5.5); (12.75 : 5.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/User/User_Recommendation" />
+      <nodes>
+        <classShapeMoniker Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" />
+        <classShapeMoniker Id="c1821e7f-1c84-4418-b67c-7ac9b3d2fd03" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.66429768880208); (3.5 : 6.66429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/Country/Country_User" />
+      <nodes>
+        <classShapeMoniker Id="e941d9a5-6dac-44db-91d9-4e8a74b85f76" />
+        <classShapeMoniker Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 7.50564697265625); (14.75 : 7.50564697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/App/App_UserApp" />
+      <nodes>
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+        <classShapeMoniker Id="6ae064ff-8d4b-4c0e-9905-b28908978861" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.69032598632812); (8.5 : 6.69032598632812); (8.5 : 5.25); (15.75 : 5.25); (15.75 : 6.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/User/User_UserApp" />
+      <nodes>
+        <classShapeMoniker Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" />
+        <classShapeMoniker Id="6ae064ff-8d4b-4c0e-9905-b28908978861" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.81814697265625); (6.25 : 5.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/User/User_UserFeature" />
+      <nodes>
+        <classShapeMoniker Id="5662509e-08ef-46cd-ab8f-b1f516e19bd6" />
+        <classShapeMoniker Id="d7308ec4-e19d-43a8-8e78-f75542dc80cb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 13.3565991210937); (10.5312525 : 13.3565991210937); (10.5312525 : 9.3670068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/Version/Version_App" />
+      <nodes>
+        <classShapeMoniker Id="82e35d3e-78a8-4623-84e8-f5c1cfc42d7a" />
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.4687475 : 9.3670068359375); (9.4687475 : 12.8345470605469); (10.4479191666667 : 12.8345470605469 : JumpStart); (10.6145858333333 : 12.8345470605469 : JumpEnd); (11.75 : 12.8345470605469)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SmartMarketDataClassesDataContext/App/App_Version" />
+      <nodes>
+        <classShapeMoniker Id="69b2b0d1-115b-4fb4-91b6-a2ef6c9a0073" />
+        <classShapeMoniker Id="82e35d3e-78a8-4623-84e8-f5c1cfc42d7a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

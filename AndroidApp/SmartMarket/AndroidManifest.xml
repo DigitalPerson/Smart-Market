@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.digitalsoft.smartmarket"
+    android:versionCode="1"
+    android:versionName="0.5.4.6" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_Name" >
+        <activity
+            android:name=".Main"
+            android:theme="@style/normalActivityTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
+        </activity>
+        <activity
+            android:name=".SignIn"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".SignUp"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewAppTypes"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewCategories"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewApps"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewAppDetails"
+            android:theme="@style/normalActivityTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="market" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewImage"
+            android:theme="@style/viewImageActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewVoiceRecognitionMatches"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".CreateNFCTag"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewMyApps"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".ViewUpdates"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:theme="@style/normalActivityTheme" >
+        </activity>
+    </application>
+
+</manifest>

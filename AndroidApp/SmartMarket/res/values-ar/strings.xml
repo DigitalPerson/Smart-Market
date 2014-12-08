@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<!-- App Info -->
+    <string name="app_Name">Smart Market</string>
+    <string name="app_DeveloperName">DigitalSoft</string>
+    <string name="app_supportEmail">support@digital-soft.org</string>
+    <string name="app_SupportWebsite">www.digital-soft.org</string>
+    
+    
+    <!-- General App Messages -->
+    <string name="noConnectionMessage">لا يوجد اتصال بشبكة الانترنت!</string>
+    <string name="appNotFoundMessage">البرنامج غير موجود في السوق!</string>
+    <string name="waitMessage">يرجى الانتظار…</string>
+    <string name="signInMessage">قم بتسجيل الدخول أولا</string>
+    <string name="signUpMessage">لا تملك حساب؟ قم بالاشتراك بشكل مجاني</string>
+    <string name="noVoiceRecognitionServiceMessage">خدمة الأوامر الصوتية غير موجودة على الجهاز، هل تريد تثبيت واحدة الآن؟</string>
+    <string name="noSDCardMessage">لم يتم العثور على  بطاقة ذاكرة!</string>
+    <string name="enterCorrectFirstNameMessage">يرجى إدخال الاسم الأول بشكل صحيح</string>
+    <string name="enterCorrectLastnameMessage">يرجى إدخال الاسم الاخير بسكل صحيح</string>
+    <string name="passwordsDonttMatchMessage">كلمتي المرور غير متطابقيت، الرجاء إاعداة المحاولة</string>
+    <string name="enterCorrectEmailMessage">يرجى ادخال بريد الكتروني صحيح</string>
+    <string name="enterCorrectPasswordMessage">الرجاء إدخال كلمة مرور صحيحة</string>
+    <string name="enterMoteCharactersMessage">يرجى ادخال 3 محارف على الاقل للقيام بالبحث</string>
+    <string name="invalidSigInInfoMessage">معلومات الدخول غير صحيحه، يرجى إعادة المحاولة!</string>
+    <string name="successfulSignInMessage">تم تسجيل الدخول بنجاح</string>
+    <string name="successfulSignOutMessage">تم تسجيل الخروج بنجاح</string>
+    <string name="successfulSignUpMessage">تم الاشتراك بنجاح</string>
+    <string name="emailAlreadySignedUpMessage">هذا البريد الالكتروني مشترك مسبقا، يرجى اعداة المحاولة باستخدام بريد آخر</string>
+    <string name="installAppMessage">يرجى تثبيت التطبيق أولا</string>
+    <string name="ratingSuccessMessage">تم تقييم التطبيق بنجاح</string>
+    <string name="downloadingMessage">جاري التحميل…</string>
+    <string name="noResultsFoundMessage">لا يوجد نتائج!</string>
+    <string name="speakMessage">قم بالتحدث الآن</string>
+    <string name="thereIsNewerVersionMessage">يتوفر اصدار أحدث من البرنامج، هل تريد التحديث؟</string>
+    <string name="theAppIsNotCompatibleMessage">التطبيق غير متوافق مع جهازك</string>
+    
+    <!-- General App Strings -->
+    <string name="versionSizeUnit">م.ب</string>
+    <string name="description">التوصيف:</string>
+    <string name="versionNumber">الاصدار:</string>
+    <string name="installs">التثبيات:</string>
+    <string name="developerWebsite">الموقع:</string>
+    <string name="developerSupportEmail">البريد:</string>
+    <string name="versionDate">التحديث:</string>
+    <string name="versionSize">حجم الملف:</string>
+    <string name="install">تثبيت</string>
+    <string name="uninstall">إزالة</string>
+    <string name="open">تشغيل</string>
+    <string name="update">تحديث</string>
+    <string name="cancel">الغاء</string>
+    <string name="appName">اسم البرنامج</string>
+    <string name="developerName">المطور</string>
+    <string name="signIn">تسجيل دخول</string>
+    <string name="signOut">تسجيل خروج</string>
+    <string name="signUp">اشتراك</string>
+    <string name="firstName">الاسم الأول</string>
+    <string name="lastName">الاسم الأخير</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="search">بحث</string>
+    <string name="voiceSearch">البحث الصوتي</string>
+    <string name="password">كلمة المرور</string>
+    <string name="confirmPassword">تأكيد كلمة المرور</string>
+    <string name="forgotPassword">لم تتذكر كلمة المرور؟</string>
+    <string name="icon">الأيقونة</string>
+    <string name="about">حول</string>
+    <string name="settings">الإعدادات</string>
+    <string name="exit">خروج</string>
+    <string name="generateBarcode">باركود</string>
+    <string name="createNFCTag">وسم NFC</string>
+    <string name="screenshot">صورة</string>
+    <string name="categories">التصنيفات</string>
+    <string name="main">الصفحة الرئيسية</string>
+    <string name="featuredApps">تطبيقات متميزة</string>
+    <string name="myApps">تطبيقاتي</string>
+    <string name="updates">التحديثات</string>
+    <string name="apps">تطبيقات</string>
+    <string name="games">ألعاب</string>
+    <string name="suggestedApps">التطبيقات المقترحة</string>
+	<string name="headerMenuSeparator">|</string>
+	<string name="currentVersion">الاصدار الحالي</string>
+	<string name="by">بواسطة</string>
+	<string name="yes">نعم</string>
+	<string name="no">لا</string>
+	<string name="language">اللغة</string>
+	<string name="loadingMore">تحميل المزيد…</string>
+	<string name="newestVersion">الاصدار الأحدث:</string>
+	<string name="newestApps">أحدث التطبيقات</string>
+	
+	<!-- NFC Tag Strings -->
+	<string name="thisFeatureRquiresICSMessage">هذه الميزة تتطلب اصدار اندرويد 4 او احدث.</string>
+	<string name="noNFCSupportMessage">لا يتوفر دعم ل NFC في هذا الجهاز</string>
+	<string name="touchNFCTagToWriteMessage">قم بملامسة الوسم بالجهاز لتتم الكتاية عليه</string>
+	<string name="readOnlyNFCTageMessage">هذا الوسم قايل للقراءة فقط.</string>
+	<string name="noSpaceInNFCTageMessage">لا يوجد مساحة كافية في هذا الوسم.</string>
+	<string name="nfcTagWrittenSuccessfullyMessage">تمت عملية الكتابة على الوسم بنجاح</string>
+	<string name="nfcTagFormatedSuccessfullyMessage">تمت عملية الكتابة على الوسم بنجاح، اغلق البرنامج و امسح الوسم.</string>
+	<string name="unableToFormatNFCTageMessage">لا يمكن تهيئة الوسم بصيغة NDEF.</string>
+	<string name="nfcTagDoesntSupportNDEFMessage">هذا الوسم لا يدعم صيغة NDEF.</string>
+	<string name="failedToWriteNFCTagMessage">فشلت عملية الكتابة على الوسم.</string>
+	<string name="writeNFCTag">الكتابة على الوسم</string>
+
+	<!-- Settings Strings -->
+	<string name="autoUpgradeTitle">التحديث التلقائي</string>
+	<string name="autoUpgradeSummary">القيام بتحديث التطبيق بشكل تلقائي.</string>
+	
+	
+	<!-- Arrays -->
+    <string-array name="genders">
+        <item>ذكر</item>
+        <item>انثى</item>
+    </string-array>
+    <string-array name="languages">
+        <item>العربية</item>
+        <item>الانكليزية</item>
+        <item>الاسبانية</item>
+    </string-array>
+    <string-array name="locales">
+        <item>ar</item>
+        <item>en-us</item>
+        <item>es_ES</item> 
+    </string-array>
+
+</resources>

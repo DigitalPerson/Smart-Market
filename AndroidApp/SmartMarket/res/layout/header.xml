@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- Dummy item to prevent textView from receiving focus -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/search_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/search"
+            android:lines="1"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp" />
+
+        <ImageButton
+            android:id="@+id/search_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/search"
+            android:src="@android:drawable/ic_search_category_default" />
+
+        <ImageButton
+            android:id="@+id/voiceSearch_imageButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/voiceSearch"
+            android:src="@android:drawable/ic_btn_speak_now" />
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/headerMenu_horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/headerMenu_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_menu_background"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/main_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/main" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/categories_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/categories" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/suggestedApps_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/suggestedApps" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/featuredApps_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/featuredApps" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/newestApps_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/newestApps" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/myApps_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/myApps" />
+
+            <TextView
+                style="@style/headerMenuSeparator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/headerMenuSeparator" />
+
+            <TextView
+                android:id="@+id/updates_textView"
+                style="@style/headerMenuClickableItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/updates" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.google.ads.AdView
+            android:id="@+id/ads_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a14fe2b212b265f"
+            ads:loadAdOnCreate="true" />
+    </LinearLayout>
+
+</LinearLayout>

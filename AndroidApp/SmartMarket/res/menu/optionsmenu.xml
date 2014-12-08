@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Remember to change the "signUpMenuItemIndex" variable value when changing order of items in the menu -->
+    <item
+        android:id="@+id/signIn_menuItem"
+        android:title="@string/signIn"/>
+    <item
+        android:id="@+id/signUp_menuItem"
+        android:title="@string/signUp"/>
+    <item
+        android:id="@+id/settings_menuItem"
+        android:title="@string/settings"/>
+    <item
+        android:id="@+id/createNFCTag_menuItem"
+        android:title="@string/createNFCTag"/>
+    <item
+        android:id="@+id/generateBarcode_menuItem"
+        android:title="@string/generateBarcode"/>
+    <item
+        android:id="@+id/about_menuItem"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/exit_menuItem"
+        android:title="@string/exit"/>
+
+</menu>

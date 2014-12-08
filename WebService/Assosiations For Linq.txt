@@ -1,0 +1,16 @@
+AppType ---------- Category
+App     ---------> Category
+App     ---------> Screenshoot
+App     ---------> Developer
+App     ---------- UserApp
+App     ---------- Recommendation
+App     ---------> Version  
+App     ---------> Version (activatedVersionID)
+User    ---------- Developer
+User    ---------> Country
+User    ---------- UserApp
+User    ---------- UserFeature
+User    ---------- Recommendation
+
+remember no class must see the user because it conatins the password :)
+

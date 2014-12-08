@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<!-- App Info -->
+    <string name="app_Name">Smart Market</string>
+    <string name="app_DeveloperName">DigitalSoft</string>
+    <string name="app_supportEmail">support@digital-soft.org</string>
+    <string name="app_SupportWebsite">www.digital-soft.org</string>
+    
+    
+    <!-- General App Messages -->
+    <string name="noConnectionMessage">No hay conexión a Internet!</string>
+    <string name="appNotFoundMessage">El programa no se encuentra en el mercado!</string>
+    <string name="waitMessage">Por favor, espere…</string>
+    <string name="signInMessage">Registrarse en el primer</string>
+    <string name="signUpMessage">Todavía no tienes una cuenta? Regístrate de forma gratuita</string>
+    <string name="noVoiceRecognitionServiceMessage">Comandos de servicio de voz no existen en el dispositivo, se desea instalar uno ahora?</string>
+    <string name="noSDCardMessage">No se encontró en una tarjeta de memoria!</string>
+    <string name="enterCorrectFirstNameMessage">Por favor, introduzca su nombre correctamente</string>
+    <string name="enterCorrectLastnameMessage">Por favor, introduzca su apellido correctamente</string>
+    <string name="passwordsDonttMatchMessage">La contraseña no coinciden, por favor, inténtalo de nuevo</string>
+    <string name="enterCorrectEmailMessage">Por favor, introduzca una dirección válida de correo electrónico</string>
+    <string name="enterCorrectPasswordMessage">Por favor, introduzca una contraseña válida</string>
+    <string name="enterMoteCharactersMessage">Por favor, introduzca 3 caracteres, por lo menos para hacer la investigación</string>
+    <string name="invalidSigInInfoMessage">Ingresar la información es incorrecta, por favor vuelve a intentarlo!</string>
+    <string name="successfulSignInMessage">Ha entrado en la sesion con éxito</string>
+    <string name="successfulSignOutMessage">Cerrado la sesión con éxito</string>
+    <string name="successfulSignUpMessage">Sido participar con éxito</string>
+    <string name="emailAlreadySignedUpMessage">Este e-mail pre-compartida, por favor vuelve a intentarlo con otro correo</string>
+    <string name="installAppMessage">Por favor, instale la  aplicación primera</string>
+    <string name="ratingSuccessMessage">La aplicación fue evaluado con éxito</string>
+    <string name="downloadingMessage">Cargando…</string>
+    <string name="noResultsFoundMessage">no hay resultados!</string>
+    <string name="speakMessage">Ahora  habla</string>
+    <string name="thereIsNewerVersionMessage">Una versión más reciente del programa, se desea actualizar?</string>
+    <string name="theAppIsNotCompatibleMessage">La aplicación no es compatible con su dispositivo</string>
+    
+    <!-- General App Strings -->
+    <string name="versionSizeUnit">M.B</string>
+    <string name="description">Descripción:</string>
+    <string name="versionNumber">Fecha de publicación:</string>
+    <string name="installs">Instalaciones:</string>
+    <string name="developerWebsite">Ubicación:</string>
+    <string name="developerSupportEmail">E-mail:</string>
+    <string name="versionDate">Actualizado:</string>
+    <string name="versionSize">Tamaño del archivo:</string>
+    <string name="install">instalar</string>
+    <string name="uninstall">eliminación</string>
+    <string name="open">la activación</string>
+    <string name="update">actualizar</string>
+    <string name="cancel">cancelar</string>
+    <string name="appName">Nombre del programa</string>
+    <string name="developerName">promotor</string>
+    <string name="signIn">Inicia sesión</string>
+    <string name="signOut">Cierre la sesión</string>
+    <string name="signUp">suscripción</string>
+    <string name="firstName">nombre</string>
+    <string name="lastName">apellido</string>
+    <string name="email">E-mail</string>
+    <string name="search">Buscar</string>
+    <string name="voiceSearch">Búsqueda por voz</string>
+    <string name="password">contraseña</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="forgotPassword">No recuerda su contraseña?</string>
+    <string name="icon">icono</string>
+    <string name="about">Alrededor de nosotros</string>
+    <string name="settings">Configuración</string>
+    <string name="exit">Salida</string>
+    <string name="generateBarcode">Código de barras</string>
+    <string name="createNFCTag">Tag NFC</string>
+    <string name="screenshot">Imagen</string>
+    <string name="categories">Categorías</string>
+    <string name="main">Pagina principal</string>
+    <string name="featuredApps">Distintas aplicaciones</string>
+    <string name="myApps">Mi propia aplicaciones</string>
+    <string name="updates">Actualizaciones</string>
+    <string name="apps">Aplicaciones</string>
+    <string name="games">Juegos</string>
+    <string name="suggestedApps">Aplicaciones de la propuesta</string>
+	<string name="headerMenuSeparator">|</string>
+	<string name="currentVersion">La versión actual</string>
+	<string name="by">por</string>
+	<string name="yes">sí</string>
+	<string name="no">no</string>
+	<string name="language">lengua</string>
+	<string name="loadingMore">Descargar más…</string>
+	<string name="newestVersion">La última versión:</string>
+	<string name="newestApps">La última Aplicaciones</string>
+	
+	<!-- NFC Tag Strings -->
+	<string name="thisFeatureRquiresICSMessage">Esta característica requiere la versión 4 o la última Android.</string>
+	<string name="noNFCSupportMessage">La ayuda no está disponible para la tecnología NFC en este dispositivo</string>
+	<string name="touchNFCTagToWriteMessage">A continuación, toque la etiqueta en el dispositivo para que pueda escribir en él</string>
+	<string name="readOnlyNFCTageMessage">Esta etiqueta sólo es legible.</string>
+	<string name="noSpaceInNFCTageMessage">No hay espacio suficiente en esta etiqueta.</string>
+	<string name="nfcTagWrittenSuccessfullyMessage">El proceso de escritura ha sido con éxito en la etiqueta</string>
+	<string name="nfcTagFormatedSuccessfullyMessage">Cierra el programa y borrar la etiqueta.</string>
+	<string name="unableToFormatNFCTageMessage">Etiqueta puede ser configurado para formatear NDEF.</string>
+	<string name="nfcTagDoesntSupportNDEFMessage">Esta etiqueta no es compatible con la fórmula de NDEF.</string>
+	<string name="failedToWriteNFCTagMessage">El fracaso en el proceso de escribir en la etiqueta.</string>
+	<string name="writeNFCTag">Escribir en la etiqueta</string>
+
+	<!-- Settings Strings -->
+	<string name="autoUpgradeTitle">Actualización automática</string>
+	<string name="autoUpgradeSummary">Para actualizar la aplicación automáticamente.</string>
+	
+	
+	<!-- Arrays -->
+    <string-array name="genders">
+        <item>masculino</item>
+        <item>femenino</item>
+    </string-array>
+    <string-array name="languages">
+        <item>árabe</item>
+        <item>Inglés</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="locales">
+        <item>ar</item>
+        <item>en-us</item>
+        <item>es_ES</item> 
+    </string-array>
+
+</resources>

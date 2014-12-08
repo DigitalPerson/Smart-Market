@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<!-- App Info -->
+    <string name="app_Name">Smart Market</string>
+    <string name="app_DeveloperName">DigitalSoft</string>
+    <string name="app_supportEmail">support@digital-soft.org</string>
+    <string name="app_SupportWebsite">www.digital-soft.org</string>
+    
+    
+    <!-- General App Messages -->
+    <string name="noConnectionMessage">No internet connection!</string>
+    <string name="appNotFoundMessage">App not found in the market!</string>
+    <string name="waitMessage">Please wait…</string>
+    <string name="signInMessage">Please sign in first</string>
+    <string name="signUpMessage">Don\'t have an account? sign up for free</string>
+    <string name="noVoiceRecognitionServiceMessage">No voice recognition service found, do you want to install one?</string>
+    <string name="noSDCardMessage">No SD card found!</string>
+    <string name="enterCorrectFirstNameMessage">Please enter a correct first Name</string>
+    <string name="enterCorrectLastnameMessage">Please enter a correct last name</string>
+    <string name="passwordsDonttMatchMessage">Passwords dont\'t match, please try again!</string>
+    <string name="enterCorrectEmailMessage">Please enter a correct email</string>
+    <string name="enterCorrectPasswordMessage">Please enter a correct password</string>
+    <string name="enterMoteCharactersMessage">Please enter at least 3 characters to search</string>
+    <string name="invalidSigInInfoMessage">Invalid info, please try again!</string>
+    <string name="successfulSignInMessage">Successful sign in</string>
+    <string name="successfulSignOutMessage">Successful sign out</string>
+    <string name="successfulSignUpMessage">Successful sign Up</string>
+    <string name="emailAlreadySignedUpMessage">The email has already signed up, please try another email</string>
+    <string name="installAppMessage">Please install the app first</string>
+    <string name="ratingSuccessMessage">you have rated the app successfully</string>
+    <string name="downloadingMessage">Downloading…</string>
+    <string name="noResultsFoundMessage">No results found!</string>
+    <string name="speakMessage">Speak Now</string>
+    <string name="thereIsNewerVersionMessage">There is a newer version of the app, do you want to upgrade?</string>
+    <string name="theAppIsNotCompatibleMessage">This app isn\'t compatible with your device</string>
+    
+    <!-- General App Strings -->
+    <string name="versionSizeUnit">MB</string>
+    <string name="description">Description:</string>
+    <string name="versionNumber">Version:</string>
+    <string name="installs">Installs:</string>
+    <string name="developerWebsite">Website:</string>
+    <string name="developerSupportEmail">Email:</string>
+    <string name="versionDate">Update:</string>
+    <string name="versionSize">File Size:</string>
+    <string name="install">Install</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="open">Open</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="appName">App Name</string>
+    <string name="developerName">Developer</string>
+    <string name="signIn">Sign In</string>
+    <string name="signOut">Sign Out</string>
+    <string name="signUp">Sign Up</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="search">Search</string>
+    <string name="voiceSearch">Voice Search</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="icon">Icon</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="generateBarcode">Barcode</string>
+    <string name="createNFCTag">NFC Tag</string>
+    <string name="screenshot">Screenshot</string>
+    <string name="categories">Categories</string>
+    <string name="main">Main</string>
+    <string name="featuredApps">Featured</string>
+    <string name="myApps">My apps</string>
+    <string name="updates">Updates</string>
+    <string name="apps">Apps</string>
+    <string name="games">Games</string>
+    <string name="suggestedApps">Suggested apps</string>
+	<string name="headerMenuSeparator">|</string>
+	<string name="currentVersion">Current version:</string>
+	<string name="by">By</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="language">Language</string>
+	<string name="loadingMore">Loading more…</string>
+	<string name="newestVersion">Newest version:</string>
+	<string name="newestApps">Newest</string>
+	
+	<!-- NFC Tag Strings -->
+	<string name="thisFeatureRquiresICSMessage">This feature requires Android 4 or later version.</string>
+	<string name="noNFCSupportMessage">Your device doesn\'t support NFC.</string>
+	<string name="touchNFCTagToWriteMessage">Touch and hold tag against phone to write.</string>
+	<string name="readOnlyNFCTageMessage">Read-only tag.</string>
+	<string name="noSpaceInNFCTageMessage">Tag doesn\'t have enough free space.</string>
+	<string name="nfcTagWrittenSuccessfullyMessage">Tag written successfully.</string>
+	<string name="nfcTagFormatedSuccessfullyMessage">Tag written successfully!\nClose this app and scan tag.</string>
+	<string name="unableToFormatNFCTageMessage">Unable to format tag to NDEF.</string>
+	<string name="nfcTagDoesntSupportNDEFMessage">Tag doesn\'t appear to support NDEF format.</string>
+	<string name="failedToWriteNFCTagMessage">Failed to write tag.</string>
+	<string name="writeNFCTag">Write NFC Tag</string>
+
+	<!-- Settings Strings -->
+	<string name="autoUpgradeTitle">Auto upgrade</string>
+	<string name="autoUpgradeSummary">Auto upgrade Smart Market.</string>
+	
+	
+	<!-- Arrays -->
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Arabic</item>
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="locales">
+        <item>ar</item>
+        <item>en-us</item>
+        <item>es_ES</item> 
+    </string-array>
+
+</resources>

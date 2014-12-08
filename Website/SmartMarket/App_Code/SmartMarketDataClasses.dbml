@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="C363519_SmartMarket" Class="SmartMarketDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mssql507.ixwebhosting.com;Initial Catalog=C363519_SmartMarket;Persist Security Info=True;User ID=C363519_SmartMarket" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="C363519_SmartMarketConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="C363519_SmartMarket.App" Member="Apps">
+    <Type Name="App">
+      <Column Name="appID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="categoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="developerID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="packageName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="installs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="VarChar(4000) NOT NULL" CanBeNull="false" />
+      <Column Name="whatIsNew" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="rate" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="ratesCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="activatedVersionID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="published" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="App_Recommendation" Member="Recommendations" ThisKey="appID" OtherKey="appID" Type="Recommendation" />
+      <Association Name="App_Screenshot" Member="Screenshots" ThisKey="appID" OtherKey="appID" Type="Screenshot" />
+      <Association Name="App_UserApp" Member="UserApps" ThisKey="appID" OtherKey="appID" Type="UserApp" />
+      <Association Name="App_Version" Member="Versions" ThisKey="appID" OtherKey="appID" Type="Version" />
+      <Association Name="Category_App" Member="Category" ThisKey="categoryID" OtherKey="categoryID" Type="Category" IsForeignKey="true" />
+      <Association Name="Developer_App" Member="Developer" ThisKey="developerID" OtherKey="developerID" Type="Developer" IsForeignKey="true" />
+      <Association Name="Version_App" Member="Version" ThisKey="activatedVersionID" OtherKey="versionID" Type="Version" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.AppType" Member="AppTypes">
+    <Type Name="AppType">
+      <Column Name="appTypeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="AppType_Category" Member="Categories" ThisKey="appTypeID" OtherKey="appTypeID" Type="Category" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Category" Member="Categories">
+    <Type Name="Category">
+      <Column Name="categoryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Category_App" Member="Apps" ThisKey="categoryID" OtherKey="categoryID" Type="App" />
+      <Association Name="AppType_Category" Member="AppType" ThisKey="appTypeID" OtherKey="appTypeID" Type="AppType" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Country" Member="Countries">
+    <Type Name="Country">
+      <Column Name="countryID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="abbreviation" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Country_User" Member="Users" ThisKey="countryID" OtherKey="countryID" Type="User" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Developer" Member="Developers">
+    <Type Name="Developer">
+      <Column Name="developerID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="website" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="supportEmail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Developer_App" Member="Apps" ThisKey="developerID" OtherKey="developerID" Type="App" />
+      <Association Name="User_Developer" Member="User" ThisKey="developerID" OtherKey="userID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Recommendation" Member="Recommendations">
+    <Type Name="Recommendation">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="appID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="expectedRate" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="App_Recommendation" Member="App" ThisKey="appID" OtherKey="appID" Type="App" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_Recommendation" Member="User" ThisKey="userID" OtherKey="userID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Screenshot" Member="Screenshots">
+    <Type Name="Screenshot">
+      <Column Name="screenshotID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="extension" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Association Name="App_Screenshot" Member="App" ThisKey="appID" OtherKey="appID" Type="App" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.[User]" Member="Users">
+    <Type Name="User">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="firstName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lastName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gender" Type="System.String" DbType="NChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="countryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="admin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="User_Developer" Member="Developer" ThisKey="userID" OtherKey="developerID" Type="Developer" Cardinality="One" />
+      <Association Name="User_Recommendation" Member="Recommendations" ThisKey="userID" OtherKey="userID" Type="Recommendation" />
+      <Association Name="User_UserApp" Member="UserApps" ThisKey="userID" OtherKey="userID" Type="UserApp" />
+      <Association Name="User_UserFeature" Member="UserFeatures" ThisKey="userID" OtherKey="userID" Type="UserFeature" />
+      <Association Name="Country_User" Member="Country" ThisKey="countryID" OtherKey="countryID" Type="Country" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.UserApp" Member="UserApps">
+    <Type Name="UserApp">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="appID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="rate" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="favorite" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="App_UserApp" Member="App" ThisKey="appID" OtherKey="appID" Type="App" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_UserApp" Member="User" ThisKey="userID" OtherKey="userID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.UserFeature" Member="UserFeatures">
+    <Type Name="UserFeature">
+      <Column Name="userID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="featureID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="featureValue" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Association Name="User_UserFeature" Member="User" ThisKey="userID" OtherKey="userID" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="C363519_SmartMarket.Version" Member="Versions">
+    <Type Name="Version">
+      <Column Name="versionID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="appID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="versionNumber" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="size" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+      <Column Name="minAndroidVersion" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Version_App" Member="Apps" ThisKey="versionID" OtherKey="activatedVersionID" Type="App" />
+      <Association Name="App_Version" Member="App" ThisKey="appID" OtherKey="appID" Type="App" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>
